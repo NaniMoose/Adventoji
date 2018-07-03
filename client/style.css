@@ -1,0 +1,68 @@
+body {
+	font-family: 'Trebuchet MS', sans-serif;
+    background-color: #341;
+    user-select: none;
+}
+
+.text {
+    font-family: 'Aladin', cursive;
+}
+
+.writing {
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+#gameViewport {
+    border: 2px solid #CB5;
+    background-color: #444;
+    position: fixed;
+    top: 0.5em;
+    bottom: 0.5em;
+    left: 0.5em;
+    right: 24.2em;
+    border-radius: 0.3em;
+    overflow: hidden;
+}
+
+#gameWorld {
+    position: relative;
+}
+
+#playerStats {
+    border: 2px solid #CB5;
+    background-color: #553;
+    position: fixed;
+    top: 0.5em;
+    bottom: 0.5em;
+    right: 0.5em;
+    width: 23.0em;
+    border-radius: 0.3em;
+}
+
+.gameObj {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform-origin: top left;
+}
+
+.sprite {
+    position: relative;
+    left: -0.5em;
+    top: -0.9em;
+}
+
+.treesway {
+    animation-name: treeswayKeys;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+}
+@keyframes treeswayKeys {
+    0%   {transform: skewX(-5deg);}
+    17%  {transform: skewX( 3deg);}
+    35%  {transform: skewX(-4deg);}
+    49%  {transform: skewX( 6deg);}
+    66%  {transform: skewX(-2deg);}
+    87%  {transform: skewX( 3deg);}
+    100% {transform: skewX(-5deg);}
+}
